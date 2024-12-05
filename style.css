@@ -1,94 +1,88 @@
-/* General body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff9a8b, #fad0c4);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  /* Container for the app */
-  .container {
-    width: 80%;
-    max-width: 600px;
-    margin-top: 50px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #050f18;
+    color: #333;
     text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 60px;
+    color: #f56b00 ;
+    justify-content: center;
+    
+  }
+
+  header {
+    display: flex; /* Flexbox to align logo and title */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Center the content (logo and title) horizontally */
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 50px; /* Adjust width to your preference */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust the spacing between logo and title */
   }
   
-  /* Title styling */
-  h1 {
-    font-size: 2rem;
-    color: #4a4e69;
+  form {
     margin-bottom: 20px;
   }
   
-  /* Input styling */
-  input[type="date"], input[type="number"] {
-    width: 45%;
-    margin: 10px 5px;
+  input, button {
     padding: 10px;
-    border: 2px solid #c9ada7;
+    margin: 5px;
     border-radius: 5px;
-    outline: none;
-    font-size: 1rem;
+    border: 1px solid #ccc;
   }
   
   button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    background: linear-gradient(135deg, #ff6f61, #de6262);
+    background-color:  #f56b00;
     color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
   }
   
   button:hover {
-    background: linear-gradient(135deg, #de6262, #ff6f61);
+    background-color: #0056b3;
   }
   
-  /* Scrollable ranking list */
-  #ranking-list {
-    max-height: 300px; /* Limit the height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    margin-top: 20px;
-    padding: 10px;
-    background: #f7f3f9;
-    border: 2px solid #4a4e69;
-    border-radius: 10px;
-    text-align: left;
-  }
-  
-  /* List items */
-  #ranking-list li {
-    list-style: none;
-    padding: 10px;
-    margin: 5px 0;
-    background: #c9ada7;
-    color: white;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto; /* Scrollbar only for rankings */
+    border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #fff;
   }
   
-  /* Custom scrollbar */
-  #ranking-list::-webkit-scrollbar {
-    width: 8px;
+  li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  #ranking-list::-webkit-scrollbar-thumb {
-    background: #4a4e69;
-    border-radius: 10px;
+  li span {
+    font-size: 16px;
   }
   
-  #ranking-list::-webkit-scrollbar-track {
-    background: #f7f3f9;
+  li button {
+    background-color:  #f56b00;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  li button:hover {
+    background-color: #c82333;
   }
   
