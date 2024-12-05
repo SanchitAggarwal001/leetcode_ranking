@@ -1,0 +1,94 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a8b, #fad0c4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container for the app */
+  .container {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 50px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  h1 {
+    font-size: 2rem;
+    color: #4a4e69;
+    margin-bottom: 20px;
+  }
+  
+  /* Input styling */
+  input[type="date"], input[type="number"] {
+    width: 45%;
+    margin: 10px 5px;
+    padding: 10px;
+    border: 2px solid #c9ada7;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ff6f61, #de6262);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #de6262, #ff6f61);
+  }
+  
+  /* Scrollable ranking list */
+  #ranking-list {
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+    padding: 10px;
+    background: #f7f3f9;
+    border: 2px solid #4a4e69;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  /* List items */
+  #ranking-list li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #c9ada7;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Custom scrollbar */
+  #ranking-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #ranking-list::-webkit-scrollbar-thumb {
+    background: #4a4e69;
+    border-radius: 10px;
+  }
+  
+  #ranking-list::-webkit-scrollbar-track {
+    background: #f7f3f9;
+  }
+  
